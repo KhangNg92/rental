@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class PaymentService {
-  private readonly rootURL = 'http://localhost:3001/api/payment';
+  private readonly rootURL = 'https://e-rental.herokuapp.com/api/payment';
 
   constructor(private httpClient: HttpClient) { }
 

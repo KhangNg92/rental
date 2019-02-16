@@ -15,7 +15,7 @@ class DecodedToken {
 
 @Injectable()
 export class AuthService {
-  private readonly rootURL = "http://localhost:3001/api/users";
+  private readonly rootURL = "https://e-rental.herokuapp.com/api/users";
   private decodedToken;
 
   constructor(private httpClient: HttpClient) {

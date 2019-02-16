@@ -7,7 +7,7 @@ export class UserService {
 
 
     constructor(private httpClient: HttpClient) { }
-    private readonly rootURL = 'http://localhost:3001/api/users'
+    private readonly rootURL = 'https://e-rental.herokuapp.com/api/users'
 
 
     public getUser(userId: string): Observable<any> {

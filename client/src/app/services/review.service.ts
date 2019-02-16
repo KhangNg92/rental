@@ -8,7 +8,7 @@ export class ReviewService {
 
 
     constructor(private httpClient: HttpClient) { }
-    private readonly rootURL = 'http://localhost:3001/api/reviews'
+    private readonly rootURL = 'https://e-rental.herokuapp.com/api/reviews'
 
     public createReview(review: Review, bookingId: string): Observable<any> {
         return this.httpClient.post(this.rootURL + `?bookingId=${bookingId}`, review)

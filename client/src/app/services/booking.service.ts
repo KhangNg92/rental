@@ -7,8 +7,8 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root"
 })
 export class BookingService {
-  private readonly rootURL = "http://localhost:3001/api/bookings";
-  constructor(private httpClient: HttpClient) {}
+  private readonly rootURL = "https://e-rental.herokuapp.com/api/bookings";
+  constructor(private httpClient: HttpClient) { }
 
   public createBooking(booking: Booking): Observable<any> {
     return this.httpClient.post(this.rootURL, booking);
