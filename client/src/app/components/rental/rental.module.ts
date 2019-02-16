@@ -16,7 +16,7 @@ import {
 } from "@angular/common/http";
 
 import { NgPipesModule, UcWordsPipe } from "ngx-pipes";
-import { AngMapModule } from "../map/Map.module";
+import { GoogleModule } from "../../components/map/Google.module";
 import { AuthGuard } from "../auth/auth.guard";
 
 import { Daterangepicker } from "ng2-daterangepicker";
@@ -82,7 +82,7 @@ const routes: Routes = [
     ImageUploadModule,
     PaymentModule,
     StarRatingModule,
-    AngMapModule
+    GoogleModule
   ],
 
   // service inside the providers:
