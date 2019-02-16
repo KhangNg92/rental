@@ -6,7 +6,7 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { RentalModule } from "./components/rental/rental.module";
 import { HttpClient } from "@angular/common/http";
-import { MapModule } from "./components/map/map.module";
+import { MapModule } from "./components/map/Map.module";
 import { AuthModule } from "./components/auth/auth.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from "@angular/material/button";
