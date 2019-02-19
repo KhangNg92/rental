@@ -9,7 +9,7 @@ const Rental = require("./models/rental");
 const FakeDb = require("./models/fake-db");
 
 const rentalRoutes = require("../server/routes/rentals"),
-userRoutes = require("../server/routes/users");
+  userRoutes = require("../server/routes/users");
 bookingRoute = require("../server/routes/bookings");
 imageUploadRoute = require("../server/routes/image-upload");
 paymentRoute = require('../server/routes/payment')
@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 app.use("/api/rentals", rentalRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/bookings", bookingRoute);
-app.use("/api", imageUploadRoute);
+app.use("/api/image-upload", imageUploadRoute);
 app.use('/api/payment', paymentRoute);
 app.use('/api/reviews', reviewRoute)
 
