@@ -8,7 +8,7 @@ import { Rental } from "src/app/models/rental.model";
   styleUrls: ["./rental-list.component.scss"]
 })
 export class RentalListComponent implements OnInit {
-  constructor(private rentalService: RentalService) {}
+  constructor(private rentalService: RentalService) { }
   // get this rentals then input it into the rental-list-item
   // use the html *ngFor let rental of rentals
   // then [childRental] = 'rental' then we use it
@@ -26,9 +26,9 @@ export class RentalListComponent implements OnInit {
       (rentals: Rental[]) => {
         this.rentals = rentals;
       },
-      error => {},
+      error => { },
 
-      () => {}
+      () => { }
     );
   }
 }
