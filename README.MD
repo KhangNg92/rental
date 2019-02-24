@@ -1,3 +1,3 @@
 #E-Rental /
 
-MEAN
+MEAN Stack
