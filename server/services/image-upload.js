@@ -5,7 +5,7 @@ const config = require("../config/dev");
 aws.config.update({
   secretAccessKey: config.AWS_SECRET_ACCESS_KEY,
   accessKeyId: config.AWS_ACCESS_KEY_ID,
-  region: "us-east-1"
+  region: "us-east-2"
 });
 
 console.log('Aws secret key is', config.AWS_SECRET_ACCESS_KEY)
@@ -26,7 +26,7 @@ const upload = multer({
   storage: multerS3({
     acl: 'public-read',
     s3,
-    bucket: "rental-2",
+    bucket: "e-rental-01",
 
     metadata: function (req, file, cb) {
       cb(null, { fieldName: 'TESTING_METADATA' });
