@@ -28,8 +28,9 @@ mongoose
       const fakeDb = new FakeDb();
       // fakeDb.seedDb();
       console.log("connected to the prod db");
+    } else {
+      console.log('connected to dev db')
     }
-    console.log('connected to dev db')
   })
   .catch(err => console.log(err));
 
