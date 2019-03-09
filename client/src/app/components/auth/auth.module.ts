@@ -11,19 +11,22 @@ import { AuthService } from "../../services/auth.service";
 import { AuthGuard } from "./auth.guard";
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
 import { TokenInterceptor } from "./token.interceptor";
+import { AuthComponent } from './auth.component';
+
 const routes: Routes = [
   { path: "login", component: LoginComponent, canActivate: [AuthGuard] },
   { path: "register", component: RegisterComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent],
+  declarations: [LoginComponent, RegisterComponent, AuthComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     FormsModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   providers: [
     AuthService,
@@ -35,4 +38,4 @@ const routes: Routes = [
     }
   ]
 })
-export class AuthModule {}
+export class AuthModule { }

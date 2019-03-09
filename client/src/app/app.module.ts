@@ -28,7 +28,7 @@ import { StarRatingModule } from 'angular-star-rating';
     BrowserAnimationsModule,
     ManageModule,
     UserModule,
-    StarRatingModule.forRoot()
+    StarRatingModule.forRoot(),
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]
